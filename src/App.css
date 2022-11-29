@@ -65,7 +65,8 @@
 h1 {
   color: rgb(73, 51, 35);
   font-style: italic;
-  font-size: 30px;
+  font-size: 40px;
+  margin-top: 10%;
 }
 
 h2 {
