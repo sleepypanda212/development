@@ -79,7 +79,7 @@ h3 {
   margin-top: 0px;
 }
 div {
-  font-size: 15px;
+  font-size: 19px;
 }
 
 div2 {
@@ -89,7 +89,7 @@ div2 {
 }
 
 div3 {
-  font-size: 18px;
+  font-size: 17px;
   color: rgb(73, 51, 35);
 }
 
@@ -188,7 +188,7 @@ body {
   border: transparent;
   font-weight: 600;
   color: rgb(119, 25, 25);
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.5;
   border-radius: 10px;
   margin-left: 2px;
