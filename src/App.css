@@ -1,38 +1,244 @@
 .App {
-  text-align: center;
+  font-family: 'Geneva', sans-serif;
+  padding-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-13-container {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+  align-items: left;
+  flex-wrap: wrap;
+  align-self: flex-start;
+  width:30%;
+}
+
+.app-item1 {
+  width: 90%;
+  align-self: flex-start;
+}
+
+.app-item2 {
+  width: 70%;
+  align-self: flex-end;
+}
+
+.app-item3 {
+  margin-top: 30%;
+  text-align: left;
+  justify-content: left;
+  background-color: #56855960;
+  padding: 3%;
+  width: 80%;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+.gallery-item { 
+  gap: 10%;
+  width: 30%;
+  align-self: stretch;
+  background-color: #a5cda854;
+  margin-top: 3%;
+  padding: 1%;
+  border-radius: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  color: rgb(73, 51, 35);
+  font-style: italic;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  margin-top: 0px;
+}
+
+div2 {
+  color: rgb(112, 20, 20);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+div3 {
+  font-size: 12px;
+  color: rgb(73, 51, 35);
+}
+
+body {
+  background-color: rgb(255, 248, 215);
+}
+
+.itemImg {
+  width: 100%;
+  padding-top: 10px;
+}
+
+.itemDetContainer {
+  display: flex;
+  direction: row;
+  justify-content: space-evenly;
+  text-align: bottom;
+  vertical-align: bottom;
+  align-self: flex-end;
+}
+
+.itemDet1 {
+  margin-right: auto;
+  text-align: left;
+  align-self: center;
+}
+.itemDet2 {
+  margin-left: auto;
+  text-align: right;
+  align-self: flex-end;
+}
+
+.FilterCategory {
+  font-size: 20px;
+}
+
+.ClearButton {
+  border-radius: 0.125rem;
+  padding: 0.5rem 1rem;
+  background-color: #b68181;
+  background-image: none;
+  cursor: pointer;
+  border: transparent;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  line-height: 1.5;
+  border-radius: 10px;
+  margin: 3px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.ClearButton:hover {
+  background-color: #866060;
+ }
+ .ClearButton:focus {
+  outline: 1px dotted;
+  outline: 1px auto -webkit-focus-ring-color;
+ }  
+
+.Filter {
+  display: inline-block;
+}
+
+.FilterButton{
+  border-radius: 0.125rem;
+  padding: 0.5rem 1rem;
+  background-color: #bce5bf;
+  background-image: none;
+  cursor: pointer;
+  border: transparent;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  line-height: 1.5;
+  border-radius: 10px;
+  margin: 3px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+}
+.FilterButton:hover {
+  background-color: #87a489;
+ }
+ .FilterButton:focus {
+  outline: 1px dotted;
+  outline: 1px auto -webkit-focus-ring-color;
+ }  
+
+ .RemoveButton {
+  border-radius: 0.125rem;
+  padding: 0.2rem 0.5rem;
+  margin-bottom: 3px;
+  background-color: #a8c35500;
+  background-image: none;
+  cursor: pointer;
+  border: transparent;
+  font-weight: 600;
+  color: rgb(119, 25, 25);
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 10px;
+  margin-left: 2px;
+  text-decoration: underline;
+}
+
+.RemoveButton:hover {
+  color: rgb(56, 7, 7);
+ }
+ .RemoveButton:focus {
+  outline: 1px dotted;
+ }  
+
+ .AddToCartButton {
+  border-radius: 0.125rem;
+  padding: 0.5rem 1rem;
+  background-color: #a8c35556;
+  background-image: none;
+  cursor: pointer;
+  border: transparent;
+  font-weight: 600;
+  color: black;
+  font-size: 16px;
+  line-height: 1.5;
+  border-radius: 10px;
+}
+
+.AddToCartButton:hover {
+  background-color: #87a489;
+ }
+ .AddToCartButton:focus {
+  outline: 1px dotted;
+  outline: 1px auto -webkit-focus-ring-color;
+ }  
+
+ .dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 300px;
+  z-index: 2;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  padding: 8px 12px;
+}
+
+li:hover {
+  background-color: rgba(0, 0, 0, 0.14);
+  cursor: pointer;
 }

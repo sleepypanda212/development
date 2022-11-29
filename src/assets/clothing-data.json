@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Puffer Jacket",
+    "description": "Puffer jacket to keep you warm even in New England",
+    "price": 200,
+    "category": "Outer",
+    "color": "Brown",
+    "image": "images/puffer.png"
+  },
+  {
+    "name": "T-Shirt with Bear Print",
+    "description": "T-shirt with your cute bear friend",
+    "price": 25,
+    "category": "Top",
+    "color": "Pink",
+    "image": "images/bearshirt.png"
+  },
+  {
+    "name": "Orange Flip Flops",
+    "description": "Bright orange flip flops perfect for the summer",
+    "price": 20,
+    "category": "Shoes",
+    "color": "Orange",
+    "image": "images/sandals.png"
+  },
+  {
+    "name": "Brown University T-Shirt",
+    "description": "T-shirt with a Brown logo",
+    "price": 40,
+    "category": "Top",
+    "color": "Brown",
+    "image": "images/brownshirt.png"
+  },
+  {
+    "name": "Cinderella Heels",
+    "description": "Heels to make you feel like Cinderella",
+    "price": 100,
+    "category": "Shoes",
+    "color": "Blue",
+    "image": "images/heels.png"
+  },
+  {
+    "name": "Jean Jacket",
+    "description": "A staple jean jacket",
+    "price": 120,
+    "category": "Outer",
+    "color": "Blue",
+    "image": "images/jeanjacket.png"
+  },
+  {
+    "name": "Shirt with Heart Print",
+    "description": "Shirt with a giant heart",
+    "price": 30,
+    "category": "Top",
+    "color": "White",
+    "image": "images/heartshirt.png"
+  },
+  {
+    "name": "Tennis Skirt",
+    "description": "Cute tennis skirt",
+    "price": 80,
+    "category": "Bottom",
+    "color": "Blue",
+    "image": "images/skirt.png"
+  },
+  {
+    "name": "Orange Pants",
+    "description": "Pants to keep your knees warm",
+    "price": 85,
+    "category": "Bottom",
+    "color": "Orange",
+    "image": "images/pants.png"
+  },
+  {
+    "name": "Winter Hat",
+    "description": "Hat to protect you from New England snow",
+    "price": 50,
+    "category": "Accessory",
+    "color": "White",
+    "image": "images/hat.png"
+  },
+  {
+    "name": "Boots",
+    "description": "Trendy boots",
+    "price": 180,
+    "category": "Shoes",
+    "color": "White",
+    "image": "images/boots.png"
+  },
+  {
+    "name": "Watch",
+    "description": "Simple but functional watch",
+    "price": 300,
+    "category": "Accessory",
+    "color": "Yellow",
+    "image": "images/watch.png"
+  }
+]
