@@ -7,11 +7,11 @@ import ClothingItem from "./components/clothing-item.js";
 function App() {
 
   const [item, setItem] = useState(clothingData);
-  const menuItems = [...new Set(clothingData.map((Val) => Val.category))];
+  const catItems = [...new Set(clothingData.map((Val) => Val.category))];
   const colorItems = [...new Set(clothingData.map((Val) => Val.color))];
   const priceItems = [...new Set(clothingData.map((Val) => Val.price))];
   const [temp1, settemp1] = useState(new Array(colorItems.length).fill(0));
-  const [temp2, settemp2] = useState(new Array(menuItems.length).fill(0));
+  const [temp2, settemp2] = useState(new Array(catItems.length).fill(0));
 
   const [checkedState, setCheckedState] = useState(
     new Array(colorItems.length).fill(false)
@@ -40,7 +40,7 @@ function App() {
   }
 
   const [checkedState1, setCheckedState1] = useState(
-    new Array(menuItems.length).fill(false)
+    new Array(catItems.length).fill(false)
   );
   const handleOnChange1 = (position) => {
     const updatedCheckedState1 = checkedState1.map((item, index) =>
@@ -50,12 +50,12 @@ function App() {
     const catind = updatedCheckedState1.reduce(
       (catind, currentState1, index) => {
         if (currentState1 === true) {
-          catind.push(menuItems[index]);
+          catind.push(catItems[index]);
           return catind;
         }
         return catind;
       },
-      new Array(menuItems.length).fill(0)
+      new Array(catItems.length).fill(0)
     );
     settemp2(catind)
     filterItem(catind, temp1);
@@ -104,9 +104,9 @@ function App() {
 
   function handleClearFilter() {
     setCheckedState(new Array(colorItems.length).fill(false))
-    setCheckedState1(new Array(menuItems.length).fill(false))
+    setCheckedState1(new Array(catItems.length).fill(false))
     settemp1(new Array(colorItems.length).fill(0))
-    settemp2(new Array(menuItems.length).fill(0))
+    settemp2(new Array(catItems.length).fill(0))
     setItem(clothingData)
   }
 
@@ -150,7 +150,7 @@ function App() {
 
       <ul>
         <h2>Filter by item type</h2>
-        {menuItems.map(( Val, index ) => {
+        {catItems.map(( Val, index ) => {
           return (
               <div className="Filter">
                 <div className="FilterCategory">
