@@ -65,18 +65,21 @@
 h1 {
   color: rgb(73, 51, 35);
   font-style: italic;
-  font-size: 40px;
-  margin-top: 10%;
+  font-size: 50px;
+  margin-top: 6%;
 }
 
 h2 {
-  font-size: 25px;
+  font-size: 30px;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 25px;
   margin-bottom: 5px;
   margin-top: 0px;
+}
+div {
+  font-size: 15px;
 }
 
 div2 {
